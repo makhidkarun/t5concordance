@@ -18,8 +18,8 @@ for page_num in range(0, pdf.getNumPages()):
     raw_string = pdf_page.extractText()
     tokens = nltk.WordPunctTokenizer().tokenize(raw_string)
     master_tokens.extend(tokens)
-    top_of_offsets = offset + len(tokens)
-    offsets_map[page_num] = top_of_offsets
+    offset += len(tokens)
+    offsets_map[page_num] = offset
 
 token_list_file = 'all_tokens.pickle'
 offsets_file = 'token_offsets.pickle'
