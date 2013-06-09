@@ -1,5 +1,6 @@
 import nltk
 import cPickle as pickle
+import sys
 
 token_list_file = 'all_tokens.pickle'
 offsets_file = 'token_offsets.pickle'
@@ -21,6 +22,8 @@ overall_text.collocations(num=500)
 print "---------- ---------------- -----------"
 
 print overall_text.concordance('Imperium')
+
+sys.exit(0)
 
 from nltk import bigrams
 from nltk import collocations
