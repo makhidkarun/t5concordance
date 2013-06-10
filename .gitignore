@@ -38,3 +38,4 @@ nosetests.xml
 # raw files
 *.pdf
 *.pickle
+.DS_Store
