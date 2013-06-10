@@ -18,7 +18,7 @@ print "building text"
 overall_text = nltk.Text(master_tokens)
 
 print "---------- 100 collocations -----------"
-overall_text.collocations(num=500)
+overall_text.collocations(num=100)
 print "---------- ---------------- -----------"
 
 print overall_text.concordance('Imperium')

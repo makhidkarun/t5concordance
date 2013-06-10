@@ -7,9 +7,12 @@
     {% if results %}
     <p>entries found: {{ results|length }}:</p>
     <ul>
-        {% for key, value in results.iteritems() %}
-        <li>{{ key }}: {{ value }}</li>
-        {% endfor %}
+    {% for group in results|groupby('page_num') %}
+        <li>Page {{ group.grouper}}<ul>
+        {% for concord_result in group.list %}
+            <li>{{ concord_result.context }}</li>
+        {% endfor %}</ul></li>
+    {% endfor %}
     </ul>
     {% else %}
     <p>no results were found.</p>
