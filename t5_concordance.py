@@ -2,8 +2,8 @@ import nltk
 import cPickle as pickle
 import sys
 
-token_list_file = 'all_tokens.pickle'
-offsets_file = 'token_offsets.pickle'
+token_list_file = 'static/all_tokens.pickle'
+offsets_file = 'static/token_offsets.pickle'
 master_tokens = pickle.load(open(token_list_file, 'rb'))
 offsets_map = pickle.load(open(offsets_file, 'rb'))
 
@@ -22,7 +22,7 @@ overall_text.collocations(num=500)
 print "---------- ---------------- -----------"
 
 print overall_text.concordance('Imperium')
-
+index = nltk.text.ConcordanceIndex(master_tokens, key=lambda s:s.lower())
 sys.exit(0)
 
 from nltk import bigrams

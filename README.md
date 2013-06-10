@@ -22,6 +22,10 @@ Make the token maps for concordances and such:
     python token_maps.py
     # ^^ hard coded location on my local system to where to find the PDF
 
+Playground for interactively fiddling with nltk:
+
+    python -i t5_concordance.py
+
 This generates two files:
 * token_offsets.pickle
 * all_tokens.pickle

@@ -21,8 +21,8 @@ for page_num in range(0, pdf.getNumPages()):
     offset += len(tokens)
     offsets_map[page_num] = offset
 
-token_list_file = 'all_tokens.pickle'
-offsets_file = 'token_offsets.pickle'
+token_list_file = 'static/all_tokens.pickle'
+offsets_file = 'static/token_offsets.pickle'
 pickle.dump(master_tokens, open(token_list_file, 'wb'))
 pickle.dump(offsets_map, open(offsets_file, 'wb'))
 
