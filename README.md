@@ -54,5 +54,13 @@ Apache 2.0 license (see LICENSE.txt)
 Heroku App
 ----------
 
-App URL http://t5condorance.herokuapp.com/
-Git URL git@heroku.com:t5condorance.git
+App URL http://t5concordance.herokuapp.com/
+Git URL git@heroku.com:t5concordance.git
+
+Note: to avoid publishing the entire tokenset of the T5 rules to github,
+I've created a local branch named 'heroku' that includes the relevant
+pickle files (created with make_maps.py) in the static/ directory. I then
+push this branch as rebased and updated as needed to heroku to present
+the application using:
+
+    git push heroku heroku:master
