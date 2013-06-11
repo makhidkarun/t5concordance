@@ -1,7 +1,9 @@
 #stripe {
     color:red;
-    background-color:red;
-    border:solid1pxred;
+    background-color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
     height:4pt;
 }
 /*
@@ -9,18 +11,32 @@
  */
 body {
     font-size:10pt;
-    font-family: Univers, Arial,sans-serif;
-    padding:0;
-    margin:0;
+    font-family: Univers, Arial, sans-serif;
+    padding:10;
+    margin:10;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: OPT, Georgia, serif;
+    margin: 8pt;
+}
+
+.copyright {
+    font-size: 8pt;
+    font-family: Univers, Arial, sans-serif;
+    margin: 18pt;
+    padding: 2pt;
+    border: 1px solid black;
 }
 
 @font-face {
     font-family: 'OPT';
-    src: url('/fonts/optima-regular-webfont.eot');
-    src: url('/fonts/optima-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/optima-regular-webfont.woff') format('woff'),
-         url('/fonts/optima-regular-webfont.ttf') format('truetype'),
-         url('/fonts/optima-regular-webfont.svg#OptimaRegular') format('svg');
+    src: url('/static/fonts/optima-regular-webfont.eot');
+    src: url('/static/fonts/optima-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/optima-regular-webfont.woff') format('woff'),
+         url('/static/fonts/optima-regular-webfont.ttf') format('truetype'),
+         url('/static/fonts/optima-regular-webfont.svg#OptimaRegular') format('svg');
     font-weight: 400;
     font-style: normal;
 }

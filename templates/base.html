@@ -1,9 +1,13 @@
 <!doctype html>
-<title>Concordance for T5 BBB</title>
+<title>Traveller5 Concordance</title>
 <script src="/static/d3.v3.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/static/master.css">
+
+<h1>Traveller5 Concordance</h1>
+<hr id="stripe">
 
 {% if searchword %}
-<h2>concordance of T5 for {{ searchword }}</h2>
+<h2>concordance for {{ searchword }}</h2>
     {% if results %}
     <p>entries found: {{ results|length }}:</p>
     <ul>
@@ -18,8 +22,6 @@
     <p>no results were found.</p>
     {% endif %}
 {% else %}
-<h2>concordance of T5</h2>
-
 <p>Ghetto version:</p>
 <p>To make use of this concordance, simply append the word you're hunting for
 to the URL of this application. For example:
@@ -29,14 +31,14 @@ to the URL of this application. For example:
 </ul></p>
 {% endif %}
 
-<p>This is a basic concordance, created using the tooling from
+<p class:"about">This is a basic concordance, created using the tooling from
 <a href="http://nltk.org">nltk</a>, and currently only supports the concordance
 for single words. The code for this application is available under the Apache
 license and can be found on github <a href="https://github.com/makhidkarun/t5concordance">makhidkarun/t5concordance</a>.
 The concordance index {{ g.index }} has been loaded from
 a master list of {{ g.tokens|length }} tokens.</p>
 
-<p class=copyright>
+<p class="copyright">
 The Traveller game in all forms is owned by Far Future Enterprises.
 Copyright 1977 - 2013 Far Future Enterprises. Traveller is a registered
 trademark of Far Future Enterprises. Far Future permits web sites and
