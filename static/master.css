@@ -1,0 +1,26 @@
+#stripe {
+    color:red;
+    background-color:red;
+    border:solid1pxred;
+    height:4pt;
+}
+/*
+ * <hr id="stripe">
+ */
+body {
+    font-size:10pt;
+    font-family: Univers, Arial,sans-serif;
+    padding:0;
+    margin:0;
+}
+
+@font-face {
+    font-family: 'OPT';
+    src: url('/fonts/optima-regular-webfont.eot');
+    src: url('/fonts/optima-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/optima-regular-webfont.woff') format('woff'),
+         url('/fonts/optima-regular-webfont.ttf') format('truetype'),
+         url('/fonts/optima-regular-webfont.svg#OptimaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
