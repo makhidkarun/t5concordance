@@ -54,8 +54,9 @@ def frontpage(searchword=None):
     if hasattr(g, 'concord_index'):
         concord_index = g.concord_index
     else:
+        stemmer = nltk.stem.snowball.SnowballStemmer('english')
         concord_index = nltk.text.ConcordanceIndex(
-            tokens, key=lambda s: s.lower())
+            tokens, key=lambda s: stemmer.stem(s))
         g.concord_index = concord_index
     assert(concord_index)
 
