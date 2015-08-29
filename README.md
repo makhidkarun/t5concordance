@@ -14,8 +14,7 @@ Setup
 
     virtualenv .venv --distribute
     source .venv/bin/activate
-    pip install pyPdf
-    pip install nltk
+    pip install -r requirements.txt
 
 Make the token maps for concordances and such:
 
