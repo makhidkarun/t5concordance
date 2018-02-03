@@ -13,7 +13,7 @@ offsets_map = {}
 master_tokens = []
 offset = 0
 for page_num in range(0, pdf.getNumPages()):
-    print "processing page ", page_num
+    print("processing page ", page_num)
     pdf_page = pdf.getPage(page_num)
     raw_string = pdf_page.extractText()
     tokens = nltk.WordPunctTokenizer().tokenize(raw_string)

@@ -12,7 +12,7 @@ Uses:
 Setup
 -----
 
-    virtualenv .venv --distribute
+    virtualenv .venv --clear
     source .venv/bin/activate
     pip install -r requirements.txt
 
